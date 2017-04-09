@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
-  get 'login/index'
 
-  get 'login/sign_up'
+  # Controller Main
+  get 'main/index'
 
-  get 'login/sign_in'
+  get 'main/sign_in'
+
+  get 'main/sign_up'
+
+
+  # Ruta raiz
+  root to: 'main#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  # Root
-  root to: 'login#index'
-
 end
